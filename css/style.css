@@ -1,0 +1,79 @@
+html{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    background: linear-gradient(to right, rgb(44, 83, 100), rgb(32, 58, 67), rgb(15, 32, 39));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.calculator{
+    background-color: beige;
+    width: fit-content;
+    border-radius: 10px;
+    width: 400px;
+}
+.calculator-display{
+    background-color: black;
+    display: flex;
+    margin: 0;
+    color: white;
+    justify-content: flex-end;
+    align-items: center;
+    max-width: 100%;
+    border-radius: 10px 10px 0 0 ;
+}
+h1{
+    font-size: 45px;
+    font-family: "Lucida Console", sans-serif;
+    font-weight: 100;
+    overflow-x: auto;
+    margin: 0px;
+    padding: 25px;
+}
+button{
+    cursor: pointer;
+    border-radius: 7px;
+    border: none;
+    background-color: rgb(200, 200, 200);
+    height: 40px;
+    width: 85px;
+    font-size: 27px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+button:active{
+    transform: scale(0.92);
+}
+.calculator-buttons{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    padding: 10px;
+}
+
+.operator{
+    background-color: grey;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.clear{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: red;
+    border: none;
+}
+
+.equal-sign{
+    grid-column: -2;
+    grid-row: 2 / 6;
+    height: auto;
+    background-color: rgb(87, 221, 87);
+}
+
+@media screen and (max-width: 600px) {
+    .calculator{
+        width: 80%;
+    }
+}
