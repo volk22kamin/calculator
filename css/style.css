@@ -76,4 +76,7 @@ button:active{
     .calculator{
         width: 80%;
     }
+    button{
+        width: auto;
+    }
 }

@@ -46,16 +46,12 @@ const useOperators = (operator) => {
         operatorValue = operator;
         return;
     };
-    console.log('did not returne')
     const currentValue = Number(display.textContent);
-    console.log(currentValue)
     if(!firstValue){
         firstValue = currentValue;
     } else {
-        console.log(operator);
         const calculation = calculate[operatorValue](firstValue, currentValue);
         display.textContent = calculation;
-        console.log(currentValue, operatorValue, firstValue, '=', calculation);
         firstValue = calculation;
     }
     awaitsInput = true;
